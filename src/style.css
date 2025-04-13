@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("./img/fundo.jpg");
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  h1 {
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3a3a3c;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 360px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .tile {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #18181a;
+    border-radius: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: #3a3a3c;
+    color: #ffffff;
+    transition: background-color 0.3s;
+  }
+  
+  .correct {
+    background-color: #00c67a;
+    border-color: #00c67a;
+  }
+  
+  .present {
+    background-color: #ffbe4d;
+    border-color: #ffbe4d;
+  }
+  
+  .absent {
+    background-color: #7d0b18;
+    border-color: #7d0b18;
+  }
+  
+  .keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .keyboard-row {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+  }   
+  
+  .key {
+    width: 40px;
+    height: 58px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3a3a3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .key.large {
+    width: 80px;
+  }
